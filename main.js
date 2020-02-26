@@ -2,10 +2,62 @@
  * YOUR CODE HERE *
  ******************/
 
+function slice(str, x, y){
+let result = '';
+
+for(let i = 0; i < str.length; i ++){
+if(str[i].length ) {
 
 
+}
+}
+
+return str
+}
+
+function repeat(str, num){
+  
+let changedNum = ''
+
+for (let i = 0; i < num; i++){
+  changedNum += str
+
+  
+}
+return changedNum 
+}
+
+// function startsWith(str){
+//   let result = '';
+
+//   for(let i = 0; i < str.length; i++){
+//     if( str[i] === str[0]){
+// return true
+//   if(str[i] === str[1]){
+//     return false
+//   }
+
+//     }
+//   }
+
+// }
+
+//function endsWith(str){
+  //let result ='';
+  //for(let i = 0; i < str.length; i--){
 
 
+function includes(array,str){
+let result = '';
+for(let i = 0; i < array.length; i++){
+if (array[i] === str) {
+  return true
+}
+
+}
+return false
+  
+} 
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
