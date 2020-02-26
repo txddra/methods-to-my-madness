@@ -5,14 +5,25 @@
 function slice(str, x, y){
 let result = '';
 
-for(let i = 0; i < str.length; i ++){
-if(str[i].length ) {
 
+
+if(y === undefined){
+  for(let i = x; i < str.length; i ++){
+    result+= str[i]}
+    
+    } 
+
+if(x === undefined && y === undefined)
+// for(let i = 0; i < str.length; i ++){
+// result+= str[i]}
+{return str
 
 }
+  
+else{ for( let i = x; i < y; i++){
+  result+= str[i]} 
 }
-
-return str
+return result
 }
 
 function repeat(str, num){
@@ -58,6 +69,8 @@ if (array[i] === str) {
 return false
   
 } 
+
+
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
