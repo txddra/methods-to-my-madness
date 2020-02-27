@@ -5,12 +5,13 @@
 function slice(str, x, y){
 let result = '';
 
-
+//x=start
+//y=end
 
 if(y === undefined){
   for(let i = x; i < str.length; i ++){
     result+= str[i]}
-    
+
     } 
 
 if(x === undefined && y === undefined)
@@ -38,25 +39,24 @@ for (let i = 0; i < num; i++){
 return changedNum 
 }
 
-// function startsWith(str){
+function startsWith(str, subStr){
 //   let result = '';
 
-//   for(let i = 0; i < str.length; i++){
-//     if( str[i] === str[0]){
-// return true
+for(let i = 0; i < subStr.length; i++){
+ if( str[i] !== subStr[i]){
+return false;
 //   if(str[i] === str[1]){
 //     return false
 //   }
 
 //     }
-//   }
-
-// }
-
-//function endsWith(str){
+}
+}return true
+}
+function endsWith(str, subStr){
   //let result ='';
   //for(let i = 0; i < str.length; i--){
-
+return slice(str,str.length- subStr.length)=== subStr;}
 
 function includes(array,str){
 let result = '';
@@ -69,8 +69,28 @@ if (array[i] === str) {
 return false
   
 } 
+function join(x, y = ''){
+let stuck = x[0];
+for( let i = 1; i < x.length; i++){
+  stuck += y + x[i];
+}
+return stuck
+}
+function split(x, y = ''){
+  const notTogether = [];
+  //let
+}
 
+function trimStart(str){
+  let result = '';
+  for (let i = 0; i < str.length; i++){
+    if( str[i] !== ' '){
+      return slice(str, i);
 
+    }
+  }
+return result
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
