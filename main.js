@@ -91,7 +91,16 @@ function trimStart(str){
   }
 return result
 }
+function trimEnd(str){
+ let result = '';
+ for (let i = str.length - 1; i >= 0; i--){
+  if ( str[i]!== ' '){
+    return slice(str, 0, i + 1) 
+ }
 
+}
+return result
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
